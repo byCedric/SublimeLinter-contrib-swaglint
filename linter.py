@@ -16,21 +16,19 @@ from SublimeLinter.lint import NodeLinter, util
 class Swaglint(NodeLinter):
     """Provides an interface to swaglint."""
 
-    syntax = ''
-    cmd = 'swaglint'
+    syntax = 'yaml'
+    cmd = ('swaglint', '--reporter', 'compact', '--stdin', '--stdin-filename', '@')
     executable = None
     version_args = '--version'
     version_re = r'(?P<version>\d+\.\d+\.\d+)'
-    version_requirement = '>= 1.0'
-    regex = r''
-    multiline = False
+    version_requirement = '>= 0.1.2'
+    regex = (
+        r'^.+?: (?:(?P<error>error)|(?P<warning>warning))'
+        r'@ (?P<line>[0-9]+)\:(?P<col>[0-9]+)'
+        r'- (?P<message>.+)'
+    )
+    multiline = True
     line_col_base = (1, 1)
     tempfile_suffix = None
-    error_stream = util.STREAM_BOTH
-    selectors = {}
-    word_re = None
-    defaults = {}
-    inline_settings = None
-    inline_overrides = None
-    comment_re = r'\s*/[/*]'
+    error_stream = util.STREAM_STDOUT
 
