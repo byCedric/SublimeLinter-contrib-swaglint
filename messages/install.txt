@@ -7,4 +7,4 @@ This linter plugin for SublimeLinter provides an interface to swaglint.
 Before this plugin will activate, you *must*
 follow the installation instructions here:
 
-https://github.com/Cedric van Putten/SublimeLinter-contrib-swaglint
+https://github.com/byCedric/SublimeLinter-contrib-swaglint

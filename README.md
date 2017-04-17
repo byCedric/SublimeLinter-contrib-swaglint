@@ -3,7 +3,7 @@ SublimeLinter-contrib-swaglint
 
 [![Build Status](https://travis-ci.org/SublimeLinter/SublimeLinter-contrib-swaglint.svg?branch=master)](https://travis-ci.org/SublimeLinter/SublimeLinter-contrib-swaglint)
 
-This linter plugin for [SublimeLinter][docs] provides an interface to [swaglint](__linter_homepage__). It will be used with files that have the “__syntax__” syntax.
+This linter plugin for [SublimeLinter][docs] provides an interface to [swaglint](https://github.com/bycedric/swaglint). It will be used with files that have the “yaml” syntax.
 
 ## Installation
 SublimeLinter 3 must be installed in order to use this plugin. If SublimeLinter 3 is not installed, please follow the instructions [here][installation].
