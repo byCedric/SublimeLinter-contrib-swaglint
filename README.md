@@ -1,7 +1,7 @@
 SublimeLinter-contrib-swaglint
 ================================
 
-[![Build Status](https://travis-ci.org/SublimeLinter/SublimeLinter-contrib-swaglint.svg?branch=master)](https://travis-ci.org/SublimeLinter/SublimeLinter-contrib-swaglint)
+[![Build Status](https://travis-ci.org/byCedric/SublimeLinter-contrib-swaglint.svg?branch=master)](https://travis-ci.org/byCedric/SublimeLinter-contrib-swaglint)
 
 This linter plugin for [SublimeLinter][docs] provides an interface to [swaglint](https://github.com/bycedric/swaglint). It will be used with files that have the “yaml” syntax.
 
