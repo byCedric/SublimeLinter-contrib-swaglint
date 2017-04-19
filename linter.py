@@ -22,7 +22,7 @@ class Swaglint(NodeLinter):
     executable = None
     version_args = '--version'
     version_re = r'(?P<version>\d+\.\d+\.\d+)'
-    version_requirement = '>= 0.1.4'
+    version_requirement = '>= 0.1.5'
     regex = (
         r'(?:(?P<error>error)|(?P<warning>warning))\s@\s'
         r'(?P<line>[0-9]+)\:(?P<col>[0-9]+)\s-\s'
